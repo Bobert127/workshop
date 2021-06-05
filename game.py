@@ -18,10 +18,12 @@ def secret_number():
     while secret_draw != input_draw:
         if secret_draw < input_draw:
             print("To big!")
-        elif secret_draw < input_draw:
-            print("To small!")
         else:
-            print("You win!")
+            print("To small!")
+        input_draw = init_number()
+    print("You win!")
 
-secret_number()
+if __name__ == '__main__':
+
+    secret_number()
 
