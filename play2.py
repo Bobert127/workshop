@@ -1,10 +1,10 @@
 def mine_input():
-p_input = ["to small", "to big", "you win"]
-     while True:
+    p_input = ["to small", "to big", "you win"]
+    while True:
         answer = input().lower()
-        if ansver in p_input:
+        if answer in p_input:
             break
-        print("Input not in ["to small", "to big", "you win"]")
+        print("Input not in ['to small', 'to big', 'you win']")
     return answer
 
 def mine_number():
@@ -26,5 +26,5 @@ def mine_number():
 
 
 if __name__ == '__main__':
-mine_number()
+    mine_number()
 
