@@ -22,8 +22,8 @@ def check_numbers():
     return input_numbers
 
 
-def list_numbers():
-    print(", ".join(str(input_numbers) for input_numbers in sorted(input_numbers)))
+def list_numbers(numbers):
+    print(", ".join(str(number) for number in sorted(numbers)))
 
 def lotto_numbers():
     numbers = list(range(1, 50))
@@ -41,9 +41,9 @@ def lotto():
 
     a = 0
     for mine_number in mine_number:
-        if number in lotto_numbers:
+        if mine_number in lotto_number:
             a += 1
-    print(f"udało się")
+    print(f"Your type {a} {'mine_number' if a == 1 else 'mine_number'}")
 
 if __name__ == '__main__':
 
