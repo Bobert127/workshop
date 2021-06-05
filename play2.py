@@ -18,4 +18,13 @@ def mine_number():
         try_find = (max - min) // 2 + min
         print(f"Your number is: {try_find}")
         answer = mine_input()
+        if answer == "to big":
+            max = try_find
+        elif answer == "to small":
+            min = try_find
+    print("Bravo you win")
+
+
+if __name__ == '__main__':
+mine_number()
 
