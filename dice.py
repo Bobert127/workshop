@@ -8,9 +8,6 @@ def my_funcjion(my_cod):
         if e in my_cod:
             my, mr = my_cod.split(e)
         e_value = int(e[1:])
-        #break
-    #else:
-        #return "Wrong Input"
     my = int(my) if my else 1
     mr = int(mr) if mr else 0
 
@@ -18,4 +15,4 @@ def my_funcjion(my_cod):
 
 
 if __name__ == '__main__':
-    print(my_funcjion("2D10+10"))
+    print(my_funcjion("5D10+8"))
