@@ -1,16 +1,27 @@
 from random import randint
 
-draw = randint(1, 10)
+def init_number():
 
-try:
-    number = int(input("Guess the number: "))
-except ValueError:
-    print("It's not a number!")
+    while True:
+        try:
+            number = int(input("Guess the number: "))
+            break
+        except ValueError:
+            print("It's not a number!")
 
-while draw == number:
-    if draw == number:
-        print("You win!")
-    elif draw > number:
-        print("To small!")
-    elif draw < number:
-        print("To big!")
+    return number
+
+
+def secret_number():
+    secret_draw = randint(1, 100)
+    input_draw = init_number()
+    while secret_draw != input_draw:
+        if secret_draw < input_draw:
+            print("To big!")
+        elif secret_draw < input_draw:
+            print("To small!")
+        else:
+            print("You win!")
+
+secret_number()
+
