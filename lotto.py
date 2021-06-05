@@ -30,4 +30,14 @@ def lotto_numbers():
     return numbers[:6]
 
 def lotto():
+    mine_number = check_numbers()
+    print("Your type: ")
+    print_numbers(mine_number)
+
+    lotto_number = lotto_numbers()
+    print("Lotto numbers: ")
+    print_numbers(lotto_number)
+
+    a = 0
+    for
 
